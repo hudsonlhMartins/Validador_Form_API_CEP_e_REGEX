@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container flex flex--coluna flex--centro">
+
+        <section class="cartao">
+            <h2 class="cartao_titulo">Complete seu cadastro</h2>
+                <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
+                <fieldset>
+                    <legend class="formulario_legenda">Informações Basicas</legend>
+                    <div class="input_container ">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nome" 
+                            data-tipo="nome"  required>
+                        <label  class="input-label" for="name">Nome</label>
+                        <span class="input-mensagem-erro"> este campo não esta valido</span>
+                    </div>
+    
+                    <div class="input_container">
+                        <input name="preco" id="preco" class="input" type="text" placeholder="Preço" 
+                            data-tipo="preco" required>
+                        <label  class="input-label" for="preco">preco</label>
+                        <span class="input-mensagem-erro"> este campo não esta valido</span>
+                    </div>
+
+                    <div class="btn">
+                        <button class="btn_submit" type="submit">Cadastrar</button>
+                    </div>
+            </form>
+        </section>
+
+        <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js">
+        </script>
+        <script type="module" src="./app/index.js"></script>
+</body>
+</html>
